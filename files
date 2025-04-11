@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/KatabattulaPravallika/Simple-Jenkins_Pipeline_for_CI-CD.git'
+                git 'https://github.com/phanindra4568/simple-jenkinsdocker-cicd.git'
             }
         }
 
