@@ -26,7 +26,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    docker.image('my-app-image').run('-d -p 5000:5000')
+                    docker.image('my-app-image').run('-d -p 8081:8081')
                 }
             }
         }
