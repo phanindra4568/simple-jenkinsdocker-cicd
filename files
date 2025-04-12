@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    docker.build('my-app-image')
+                    docker.build('server')
                 }
             }
         }
@@ -26,7 +26,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    docker.image('my-app-image').run('-d -p 6000:6505')
+                    docker.image('server').run('-d -p 6000:6505')
                 }
             }
         }
