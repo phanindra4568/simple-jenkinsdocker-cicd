@@ -5,6 +5,6 @@ WORKDIR /app
 COPY . /app
 RUN pip install flask
 
-EXPOSE 6000
+EXPOSE 7500
 
 CMD ["python", "app.py"]
