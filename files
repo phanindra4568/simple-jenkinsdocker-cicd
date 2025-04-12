@@ -26,7 +26,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    docker.image('phoneapplication').run('-d -p 0:7575')
+                    docker.image('phoneapplication').run('-d -p 7000:7500')
                 }
             }
         }
